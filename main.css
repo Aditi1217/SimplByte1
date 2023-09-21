@@ -1,0 +1,70 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: rgb(133, 206, 231);
+}
+
+#taskInput {
+    width: 60%;
+    padding: 10px;
+    margin-right: 10px;
+    border: 2px solid;
+    border-radius: 15px;
+    background-color: rgb(86, 175, 204);
+}
+#taskInput::placeholder {
+	color: black;
+    font-weight: 500;
+}
+#addTaskBtn {
+    padding: 10px;
+    cursor: pointer;
+    border: 2px solid;
+    font-weight: 500;
+    border-radius: 15px;
+    background-color: rgb(86, 175, 204);
+}
+
+#taskList {
+    background-color: rgb(86, 175, 204);
+    width: 50%;
+    border: 2px solid;
+    padding: 10px;
+    margin: 10px;
+    border-radius: 15px;
+}
+
+.task{
+    display: flex; 
+    justify-content: space-between; 
+}
+#completedTaskList .task {
+    display: flex;
+    background-color: rgb(86, 175, 204);
+    width: 50%;
+    border: 2px solid;
+    padding: 10px;
+    margin: 10px;
+    justify-content: space-between;
+    border-radius: 15px;
+}
+
+.task input[type="checkbox"] {
+    margin-right: 10px;
+    border: 2px solid;
+}
+
+.task .actions {
+    display: flex;
+    align-items: center;
+}
+
+.editBtn {
+    margin-left: 10px;
+    cursor: pointer;
+    color: rgb(20, 17, 208);
+}
+.deleteBtn {
+    margin-left: 10px;
+    cursor: pointer;
+    color: rgb(220, 37, 74);
+}
